@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="line">
         <div class="g_p">
@@ -40,9 +42,125 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>    
+            </ul>
         </div>
     </nav>
 
+    <div >
+
+    </div>
+
+
+
+    <!-- contactform -->
+    <div class="container">
+        <h2 class="header-text">REGISTRATION FORM</h2>
+        <form>
+            <div class="form-group">
+                <label for="name" class="label-text">Name:</label>
+                <input type="text" id="name" name="name" class="input-text" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="label-text">Email:</label>
+                <input type="text" id="email" name="email" class="input-text" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="label-text">Phone No:</label>
+                <input type="text" id="phone" name="phone" class="input-text" required>
+            </div>
+            <div class="form-group studying-mode">
+                <label class="subcomponent-text">Studying Mode:</label>
+                <div class="o-f-b">
+                <div>
+                    <input type="radio" id="online" name="studyingMode" value="Online" required>
+                    <label for="Online" class="subcomponent-text">Online</label>
+                </div>
+                <div>
+                    <input type="radio" id="offline" name="studyingMode" value="Offline" required>
+                    <label for="Offline" class="subcomponent-text">Offline</label>
+                </div>            <div>
+                    <input type="radio" id="both" name="studyingMode" value="both" required>
+                    <label for="Both" class="subcomponent-text">Both</label>
+                </div>
+            </div>
+            </div>
+            
+          
+            <div class="form-group are-you">
+                <label class="student">Are you:</label>
+    
+               <div class="f-d">
+                 <div>
+                <input type="radio" id="fresher" name="status" value="Fresher" required>
+                <label for="fresher">Fresher</label>
+            </div>
+            <div>
+                <input type="radio" id="dropper" name="status" value="Dropper" required>
+                <label for="dropper">Dropper</label>
+            </div>
+        </div>
+            </div>
+            
+    
+    
+            <div class="form-group preferred-language">
+                <div class="language">
+                    <label for="language">Preferred Language for Conversation:</label>
+                </div>
+                <select id="language" name="language" required>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+    
+    
+            <div class="form-group conversation-mode">
+                <div class="m-conv">
+                    <label>Mode of Conversation:</label>
+                </div>
+                <div class="v-a">
+                    <div>
+                    <input type="radio" id="videoCall" name="conversationMode" value="Video Call" required>
+                    <label for="videoCall">Video Call</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" id="audioCall" name="conversationMode" value="Audio Call" required>
+                        <label for="audioCall">Audio Call</label>
+                    </div>
+                </div>
+                 </div>
+            <div class="form-group response-time">
+                <div class="u-w-resp">
+                    <label>How early you want a response:</label>
+                </div>
+                <div class="t-t">            
+                    <div >  
+                    <input type="radio" id="today" name="responseTime" value="Today" required>
+                    <label for="today">Today</label>
+                    </div>
+                    <div>              
+                    <input type="radio" id="tomorrow" name="responseTime" value="Tomorrow" required>
+                    <label for="tomorrow">Tomorrow</label>
+                    </div>
+                </div>
+                 </div>
+    
+                 <div class="btn">
+                    <button class="primary-button" type="submit">Submit</button>
+                 </div>
+    
+        </form>
+    </div>
+
+
+
+
+
+
+
 </body>
+
 </html>
