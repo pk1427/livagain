@@ -30,7 +30,10 @@ h6 {
 }
 
 #line {
+    
+    position: fixed;
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -138,6 +141,7 @@ nav .navigation ul li a:hover {
 
 /* Home*/
 
+
 #home {
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(images/);
     width: 100%;
@@ -158,6 +162,25 @@ nav .navigation ul li a:hover {
     color: #fff;
     letter-spacing: 1px;
 }
+
+#home .livagain{
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120px;
+    flex-wrap: wrap;
+    display: inline-flex;
+
+}
+  
+#home .livagain .sblue{
+    color: skyblue;
+
+}
+
+#home .livagain .white{
+    color: white;
+}
+
 
 #home p {
     width: 50%;
@@ -218,8 +241,6 @@ nav .navigation ul li a:hover {
 
 }
 
-
-
 #features .fea-box {
     background: #f9f9ff;
     text-align: start;
@@ -263,7 +284,7 @@ nav .navigation ul li a:hover {
     text-align: start;
     background: #f9f9ff;
     height: 100%;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -286,19 +307,7 @@ nav .navigation ul li a:hover {
     font-size: 0.9rem;
 }
 
-#course .courses .details .cost {
-    background-color: rgb(74, 74, 136);
-    color: #fff;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    right: 10px;
-    bottom: 100px;
 
-}
 
 
 /* registration */
@@ -318,33 +327,6 @@ nav .navigation ul li a:hover {
 
 
 
-/* #registration .form1,
-.form2 {
-    background: #fff;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    height: 45%;
-    width: 45%;
-    padding: 40px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-}
-
-#registration .form1 input,
-.form2 input {
-    margin: 15px 0;
-    padding: 15px 10px;
-    border: 1px solid rgb(84, 40, 241);
-    outline: none;
-    display: flex;
-
-}
-
-#registration .form1 .btn a.yellow {
-    color: #fff;
-    background-color: #fdc93b;
-    transition: 0.3s ease;
-} */
 
 
 /* banner */
@@ -353,7 +335,7 @@ nav .navigation ul li a:hover {
 .banner {
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+
 }
 
 .banner .container {
@@ -372,7 +354,7 @@ nav .navigation ul li a:hover {
 }
 
 /* Style the "Register Now" button */
-.banner .site-btn {
+/* .banner .site-btn {
     display: inline-block;
     padding: 15px 30px;
     background-color: #007bff;
@@ -387,6 +369,27 @@ nav .navigation ul li a:hover {
 
 .banner .site-btn:hover {
     background-color: #0056b3;
+} */
+
+.banner a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+.banner a.blue {
+    color: #fff;
+    background-color: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+.banner a.blue:hover {
+    color: rgb(21, 21, 100);
+    background-color: #fff;
 }
 
 
@@ -437,6 +440,42 @@ nav .navigation ul li a:hover {
     border-radius: 40%;
 
 }
+
+/* feedback */
+
+#feedback{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#feedback .feedback-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+
+#feedback .profile img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+#feedback .profile p{
+    padding: 10px;
+    font-family:;
+    padding-bottom: 60px;
+
+}
+
+#feedback h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    padding: 5px;
+}
+
+
 
 
 /* footer   */
@@ -680,4 +719,87 @@ nav .navigation ul li a:hover {
 
 .container{
     margin-top: 200px;
+}
+
+
+
+/* about page */
+
+.abt-page{
+    padding-top: 70px;
+}
+
+.about{
+    background-color:white;
+    margin-top: 77px;
+}
+
+.abt-page .about h1{
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+}
+.abt-page .about img{
+    width:25%;
+    margin-left: 40%;
+    text-align: center;
+}
+
+.abt-text {
+    align-items: end;
+}
+
+.abt-text .slogen{
+    text-align: center;
+    font-size: 27px;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+    padding: 90px;
+}
+
+.abt-text .thought{
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.abt-text .thought .text{
+    font-size: 30px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 25px;
+}
+
+.abt-text .thought img{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+.abt-text .doc-info{
+    display: flex;
+    flex-flow: row;
+    padding-top: 30px;
+    
+
+
+}
+
+
+.abt-text .doc-info img{
+    float: left;
+    padding-left: 10px;
+    padding-top: 3%;
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.abt-text .doc-info p{
+    padding-top: 3%;
+ font-size: 30px;
+ padding: 7%;
 }
