@@ -30,7 +30,7 @@ h6 {
 }
 
 #line {
-    
+
     position: fixed;
     display: flex;
     width: 100%;
@@ -163,7 +163,7 @@ nav .navigation ul li a:hover {
     letter-spacing: 1px;
 }
 
-#home .livagain{
+#home .livagain {
     display: inline;
     font-family: 'Times New Roman', Times, serif;
     font-size: 120px;
@@ -171,13 +171,13 @@ nav .navigation ul li a:hover {
     display: inline-flex;
 
 }
-  
-#home .livagain .sblue{
+
+#home .livagain .sblue {
     color: skyblue;
 
 }
 
-#home .livagain .white{
+#home .livagain .white {
     color: white;
 }
 
@@ -437,18 +437,18 @@ nav .navigation ul li a:hover {
 #experts .profile img {
     width: 150px;
     height: 150px;
-    border-radius: 40%;
+    border-radius: 0%;
 
 }
 
 /* feedback */
 
-#feedback{
+#feedback {
     padding: 8vw 8vw 0 8vw;
     text-align: center;
 }
 
-#feedback .feedback-box{
+#feedback .feedback-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
@@ -456,20 +456,20 @@ nav .navigation ul li a:hover {
 }
 
 
-#feedback .profile img{
+#feedback .profile img {
     width: 170px;
     height: 170px;
     border-radius: 50%;
 }
 
-#feedback .profile p{
+#feedback .profile p {
     padding: 10px;
-    font-family:;
+    font-family: ;
     padding-bottom: 60px;
 
 }
 
-#feedback h3{
+#feedback h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     padding: 5px;
@@ -574,10 +574,10 @@ nav .navigation ul li a:hover {
     margin: 0;
 }
 
-.footer-distributed .footer-left .logo img{
+.footer-distributed .footer-left .logo img {
 
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
 }
 
@@ -660,7 +660,7 @@ nav .navigation ul li a:hover {
 
 .social ul li {
     list-style: none;
-    margin-left: 30px;
+    margin-left: 11px;
 }
 
 .social img {
@@ -708,41 +708,88 @@ nav .navigation ul li a:hover {
 
 /* blog*/
 
-.blogs {
-    padding: 8vw 8vw 0 8vw;
-    text-align: center;
+.blog {
+    padding: 9vw 8vw 0 8vw;
+
 }
 
 
 /*contact page */
 
+#upper-text {
+    padding: 8vw 8vw 0 8vw;
+}
 
-.container{
-    margin-top: 200px;
+#upper-text .container1 .contact-details {
+    display: inline;
+    display: flex;
+    flex-direction: column;
 }
 
 
+#upper-text .container1 .contact-details img {
+    height: 50px;
+    width: 50px;
+}
+
+
+#upper-text .container1 .social-links img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.reg-form {
+    display: flex;
+    display: inline;
+    di
+}
+
+
+.reg-form .con-text {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+.reg-form .container {}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+.btn {
+    background: transparent;
+    text-decoration: dashed;
+    outline: none;
+    border: none;
+}
 
 /* about page */
 
-.abt-page{
+.abt-page {
     padding-top: 70px;
 }
 
-.about{
-    background-color:white;
+.about {
+    background-color: white;
     margin-top: 77px;
 }
 
-.abt-page .about h1{
+.abt-page .about h1 {
     position: absolute;
     top: 70%;
     left: 53%;
     transform: translate(-50%, -50%);
     font-size: 70px;
 }
-.abt-page .about img{
-    width:25%;
+
+.abt-page .about img {
+    width: 25%;
     margin-left: 40%;
     text-align: center;
 }
@@ -751,44 +798,44 @@ nav .navigation ul li a:hover {
     align-items: end;
 }
 
-.abt-text .slogen{
+.abt-text .slogen {
     text-align: center;
     font-size: 27px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 10px;
     padding: 90px;
 }
 
-.abt-text .thought{
+.abt-text .thought {
     align-items: center;
     text-align: center;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.abt-text .thought .text{
+.abt-text .thought .text {
     font-size: 30px;
     padding-left: 350px;
     padding-right: 350px;
     padding-bottom: 25px;
 }
 
-.abt-text .thought img{
+.abt-text .thought img {
     width: 50px;
     height: 50px;
     padding-bottom: 5px;
 }
 
-.abt-text .doc-info{
+.abt-text .doc-info {
     display: flex;
     flex-flow: row;
     padding-top: 30px;
-    
+
 
 
 }
 
 
-.abt-text .doc-info img{
+.abt-text .doc-info img {
     float: left;
     padding-left: 10px;
     padding-top: 3%;
@@ -798,8 +845,16 @@ nav .navigation ul li a:hover {
 }
 
 
-.abt-text .doc-info p{
+.abt-text .doc-info p {
     padding-top: 3%;
- font-size: 30px;
- padding: 7%;
+    font-size: 30px;
+    padding: 7%;
+}
+
+/* contact page */
+
+.container {}
+
+.more {
+    display: none;
 }
