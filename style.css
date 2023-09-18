@@ -29,66 +29,6 @@ h6 {
     color: rgb(24, 24, 49);
 }
 
-#line {
-
-    position: fixed;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.4vw 0.5vw;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-#line .g_p {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#line .g_p a {
-    text-decoration: none;
-    font-size: 15px;
-    align-items: center;
-
-}
-
-#line .g_p img {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-}
-
-
-
-#line h6 {
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-#line h6:hover {
-    color: #fdc93b;
-}
-
-#line ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#line ul li {
-    list-style: none;
-    margin-left: 30px;
-}
-
-#line img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
 
 /* Navigation */
 
@@ -138,6 +78,32 @@ nav .navigation ul li a:hover {
 
 }
 
+@media only screen and (max-width: 600px) {
+    nav {
+        padding-left: 5%;
+        height: 100px;
+    } 
+
+    nav img {
+        height: 50px;
+        width: 50px;
+    }
+    nav .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: -21px;
+    
+    
+    }
+}
+
+
+
+
+
+
+
 
 /* Home*/
 
@@ -170,6 +136,33 @@ nav .navigation ul li a:hover {
     flex-wrap: wrap;
     display: inline-flex;
 
+}
+
+ 
+@media only screen and (max-width: 600px) { 
+    #home .livagain {
+        font-size: 70px;
+    }
+    #home h2{
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    #home p{
+        display: flex;
+
+        padding-top: 2px;
+
+    }
+    #home .btn {
+        display: flex;
+        padding: 2px;
+        flex-direction: column;    
+    }
+
+    
+    
+   
 }
 
 #home .livagain .sblue {
@@ -231,7 +224,9 @@ nav .navigation ul li a:hover {
 #features {
     padding: 5vw 8vw 0 8vw;
     text-align: center;
+    
 }
+
 
 #features .fea-base {
     display: grid;
@@ -309,67 +304,17 @@ nav .navigation ul li a:hover {
 
 
 
-
-/* registration */
-
-#registration {
-    padding: 6vw 8vw 6vw 8vw;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-
-
-
-
 /* banner */
 
-/* Style the banner section */
 .banner {
     color: #fff;
     text-align: center;
 
 }
 
-.banner .container {
-    position: relative;
+.banner .reg{
+    padding-bottom: 60px;
 }
-
-.banner h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.banner p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-/* Style the "Register Now" button */
-/* .banner .site-btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.banner .site-btn:hover {
-    background-color: #0056b3;
-} */
 
 .banner a {
     text-decoration: none;
@@ -378,7 +323,6 @@ nav .navigation ul li a:hover {
     background-color: #fff;
     font-weight: 600;
     border-radius: 5px;
-
 }
 
 .banner a.blue {
@@ -713,12 +657,104 @@ nav .navigation ul li a:hover {
 
 }
 
+.blog-post {
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.blog .blog-post h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    text-decoration-line: underline;
+    padding-top: 20px;
+    color: aqua;
+}
+
+.blog .blog-post img {
+    margin-top: 10px;
+
+
+}
+
+.blog .blog-post strong {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.blog .blog-post p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.blog .blog-post p .more {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.blog .blog-post p ol {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.blog .blog-post p ol strong .last {
+    align-content: center;
+
+}
+
+
+
+
+.blog-post button {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-post button {
+
+    background-color: #0056b3;
+}
+
+
+@media only screen and (max-width: 600px) { 
+    .blog {
+        padding-top: 100px;
+    
+    }
+ }
+
+
+
+
+
 
 /*contact page */
 
 #upper-text {
-    padding: 8vw 8vw 0 8vw;
+    padding: 9vw 8vw 0 8vw;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    #upper-text {
+        padding: 25vw 8vw 0 8vw;
+    }
+ }
+
 
 #upper-text .container1 .contact-details {
     display: inline;
@@ -742,7 +778,7 @@ nav .navigation ul li a:hover {
 .reg-form {
     display: flex;
     display: inline;
-    di
+    
 }
 
 
@@ -751,7 +787,7 @@ nav .navigation ul li a:hover {
     text-align: center;
 }
 
-.reg-form .container {}
+
 
 .invisible {
     display: none;
@@ -764,9 +800,10 @@ nav .navigation ul li a:hover {
 
 .btn {
     background: transparent;
-    text-decoration: dashed;
+    text-decoration: underline;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 /* about page */
@@ -787,6 +824,7 @@ nav .navigation ul li a:hover {
     transform: translate(-50%, -50%);
     font-size: 70px;
 }
+
 
 .abt-page .about img {
     width: 25%;
@@ -851,9 +889,267 @@ nav .navigation ul li a:hover {
     padding: 7%;
 }
 
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .abt-page {
+        padding-top: 100px;
+    }
+
+    .abt-page .about h1 {
+        font-size: 39px;
+        margin-top: -230px;    
+        text-align: center; /* Center the heading on smaller screens */
+        left: 50%; /* Remove left positioning */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    .abt-page .about img {
+        width: 50%;
+        height: auto; /* Maintain aspect ratio */
+        margin: 20px auto; /* Center the image horizontally and add some spacing */
+        margin-left: 105px;
+    }
+
+    .abt-text {
+        text-align: center; /* Center the text content */
+    }
+    
+    .abt-text .slogen {
+        font-size: 27px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 10px;
+        padding: 30px 20px; /* Adjust padding for better spacing on small screens */
+    }
+
+    .abt-text .thought .text {
+        font-size: 24px; /* Reduce font size for better readability */
+        padding: 20px; /* Adjust padding for better spacing on small screens */
+    }
+
+    .abt-text .thought img {
+        width: 30px;
+        height: 30px; /* Reduce image size */
+    }
+
+    .abt-text .doc-info {
+        flex-direction: column; /* Stack the elements vertically on small screens */
+        align-items: center; /* Center align the content */
+    }
+
+    .abt-text .doc-info img {
+        width: 250px;
+        height: 500px; /* Reduce image size */
+    }
+
+    .abt-text .doc-info p {
+        font-size: 20px; /* Reduce font size for better readability */
+        padding: 10px; /* Adjust padding for better spacing on small screens */
+        text-align: center; /* Center align the text */
+    }
+}
+
+}
+
+
+
 /* contact page */
 
-.container {}
+/* Styling for the contact page */
+
+/* Section containing contact details and social links */
+#upper-text {
+    padding: 8vw 8vw 0 8vw;
+}
+
+#upper-text .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#upper-text .container1 .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#upper-text .container1 .contact-details img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+#upper-text .container1 .social-links {
+    margin-top: 20px;
+}
+
+#upper-text .container1 .social-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#upper-text .container1 .social-links img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Styling for the registration form section */
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8vw 8vw 0 8vw;
+}
+
+.reg-form .con-text {
+    text-align: center;
+}
+
+.reg-form .container {
+    text-align: center;
+}
+
+.reg-form .container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reg-form .form-group {
+    margin-bottom: 20px;
+}
+
+.reg-form .form-group label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-group input[type="text"],
+.reg-form .form-group input[type="radio"],
+.reg-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.reg-form .form-group input[type="radio"]+label {
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.reg-form .form-group input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+.reg-form .form-group .o-f-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form .form-group .o-f-b div {
+    flex: 1;
+}
+
+.reg-form .form-group .f-d {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form .form-group .f-d div {
+    flex: 1;
+}
+
+.reg-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.reg-form .form-group label.student {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-group .m-conv {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-group .v-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form .form-group .v-a div {
+    flex: 1;
+}
+
+.reg-form .form-group .u-w-resp {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.reg-form .form-group .t-t {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-form .form-group .t-t div {
+    flex: 1;
+}
+
+.reg-form .btn {
+    margin-top: 20px;
+}
+
+.reg-form .primary-button {
+    background-color: #fdc93b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reg-form .primary-button:hover {
+    background-color: #ffae00;
+}
+
+/* Additional styling for the "IF YOU HAVE ANY QUESTION" section */
+.h-question {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.h-question h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 .more {
     display: none;
